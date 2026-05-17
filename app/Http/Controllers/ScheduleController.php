@@ -151,7 +151,7 @@ class ScheduleController extends Controller
 
     public function fetch($id)
     {
-        $sched = Schedule::find($id)->get();
+        $sched = Schedule::where('user_id', $id)->get();
 
         if (!$sched) {
             return response()->json([
