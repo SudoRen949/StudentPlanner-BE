@@ -33,10 +33,12 @@ Route::get('/assignment/get/{id}', [AssignmentController::class, 'fetch']);
 Route::delete('/assignment/delete/{id}', [AssignmentController::class, 'delete']);
 Route::put('/assignment/update/{id}', [AssignmentController::class, 'update']);
 
-// Scheduless
+// Schedules
 Route::post('/schedule/generate/{id}', [ScheduleController::class, 'generate']);
 Route::get('/schedule/get/{id}', [ScheduleController::class, 'fetch']);
 Route::delete('/schedule/delete/{id}', [ScheduleController::class, 'delete']);
 
 // Chat
 Route::post('/chat/send', [ChatController::class, 'send']);
+
+
