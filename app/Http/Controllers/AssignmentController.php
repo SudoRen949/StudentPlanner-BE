@@ -80,7 +80,7 @@ class AssignmentController extends Controller
         $assignment->save();
 
         return response()->json([
-            'message'    => 'Assignments deleted',
+            'message'    => 'Assignments updated',
             'assignment' => $assignment
         ], 201);
     }
