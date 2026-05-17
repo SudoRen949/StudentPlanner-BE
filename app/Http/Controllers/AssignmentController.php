@@ -55,7 +55,7 @@ class AssignmentController extends Controller
 
     public function delete($id)
     {
-        $assignment = Assignment::find($id)->first();
+        $assignment = Assignment::find($id);
         $assignment->delete();
 
         return response()->json([
