@@ -75,7 +75,7 @@ class AssignmentController extends Controller
             ], 401);
         }
 
-        $assignment = Assignment::find($id)->first();
+        $assignment = Assignment::find($id);
         $assignment->completed = $request->completed;
         $assignment->save();
 
