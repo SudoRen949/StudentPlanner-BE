@@ -46,7 +46,7 @@ class UserController extends Controller
             ], 401);
         }
 
-        $user = User::find($request->id)->first();
+        $user = User::find($request->id);
 
         if (!$user) {
             return response()->json([
