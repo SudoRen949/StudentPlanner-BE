@@ -160,7 +160,7 @@ class ScheduleController extends Controller
         }
 
         return response()->json([
-            'message'  => 'Schedule deleted',
+            'message'  => 'Schedule fetched',
             'schedule' => $sched
         ], 201);
     }
