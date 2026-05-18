@@ -29,5 +29,15 @@ The robust RESTful API gateway driving the Student AI Study Planner. Built with 
 1. **Navigate to the backend directory:**
    ```bash
    cd backend
+2. **Install necessary libraries:**
+   ```bash
    composer install
+3. **Run development environment:**
+   ```bash
    php artisan serve
+
+## Deploying to Wasmer CLI
+
+1. **Run deploymeny:**
+   ```bash
+   wasmer deploy
